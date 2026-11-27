@@ -1,0 +1,219 @@
+/* NAVBAR */
+
+.navbar {
+    background-color: #0f172a;
+    color: white;
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.nav-links a:hover {
+    background-color: #334155;
+}
+
+.nav-links a.active {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* CONTENUTO */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #64748b;
+}
+
+/* STATISTICHE */
+
+.statistiche {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit, minmax(180px, 1fr)
+    );
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.stat-card span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    margin: 12px 0 0;
+}
+
+/* TABELLA */
+
+.table-container {
+    overflow-x: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #e2e8f0;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* CATEGORIE VEICOLI */
+
+.tipo {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.automobile {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+.moto {
+    background-color: #ffedd5;
+    color: #c2410c;
+}
+
+.nave {
+    background-color: #ccfbf1;
+    color: #0f766e;
+}
+
+.errore {
+    color: #dc2626;
+}
+/* MODULI DI INSERIMENTO */
+
+.form-card {
+    background-color: white;
+    max-width: 650px;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: white;
+    color: #1e293b;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.successo {
+    color: #15803d;
+    background-color: #dcfce7;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+.form-card .errore {
+    color: #b91c1c;
+    background-color: #fee2e2;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 0;
+}

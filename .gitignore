@@ -1,0 +1,29 @@
+# .NET
+**/bin/
+**/obj/
+.vs/
+
+# React e Node.js
+**/node_modules/
+**/dist/
+**/coverage/
+
+# Configurazioni locali
+.env
+.env.*
+!.env.example
+**/appsettings.Local.json
+**/secrets.json
+
+# Editor
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Database e registri
+*.mdf
+*.ldf
+*.bak
+*.log
